@@ -15,6 +15,8 @@ This repository contains a [Mustache][mustache] template for rendering CSV metad
 [Ruby Mustache][rm] does not accept colons in tags, which are hard to avoid in JSON-LD metadata.
 [Python Mustache][pm] does accept colons.
 
+This is a really simple template; it should at least work for really simple CSV metadata files. Semantics defined by the model, such as properties whose values are inherited, are not supported by default.
+
 ## License
 
 TBD

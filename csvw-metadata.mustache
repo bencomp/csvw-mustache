@@ -3,7 +3,7 @@
   <title>{{name}}</title>
 </head>
 <body>
-  <h1>{{name}}</h1>
+  <h1>{{dc:title}}</h1>
   {{#tableSchema}}
     <h2>{{aboutUrl}}</h2>
     <h2>{{primaryKey}}</h2>
@@ -17,6 +17,8 @@
     {{/titles}}
     </ul>
     Datatype: {{datatype}}{{^datatype}}string{{/datatype}}
+    <h4>Description</h4>
+    <p>{{dc:description}}</p>
     {{/columns}}
   {{/tableSchema}}
 </body>
