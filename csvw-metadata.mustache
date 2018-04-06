@@ -10,6 +10,13 @@
     <h2>Columns</h2>
     {{#columns}}
     <h3>{{name}}</h3>
+    Title(s):
+    <ul>
+    {{#titles}}
+      <li>{{.}}</li>
+    {{/titles}}
+    </ul>
+    Datatype: {{datatype}}{{^datatype}}string{{/datatype}}
     {{/columns}}
   {{/tableSchema}}
 </body>
