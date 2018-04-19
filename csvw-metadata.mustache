@@ -1,22 +1,23 @@
 <html>
 <head>
-  <title>{{name}}</title>
+  <title>Code book for {{dc:title}}</title>
 </head>
 <body>
-  <h1>{{dc:title}}</h1>
+  <h1>Code book for {{dc:title}}</h1>
   {{#tableSchema}}
     <h2>{{aboutUrl}}</h2>
     <h2>{{primaryKey}}</h2>
     <h2>Columns</h2>
     {{#columns}}
     <h3>{{name}}</h3>
-    Title(s):
-    <ul>
+    <dl>
+      <dt>Title(s)</dt>
     {{#titles}}
-      <li>{{.}}</li>
+      <dd>{{.}}</dd>
     {{/titles}}
-    </ul>
-    Datatype: {{datatype}}{{^datatype}}string{{/datatype}}
+      <dt>Datatype</dt>
+      <dd>{{datatype}}{{^datatype}}string{{/datatype}}</dd>
+    </dl>
     <h4>Description</h4>
     <p>{{dc:description}}</p>
     {{/columns}}
